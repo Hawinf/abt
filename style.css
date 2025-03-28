@@ -186,6 +186,8 @@ body {
 
 .footer-top img {
     width: 100px;
+    border: 1px solid black;
+    padding: 5px;
 }
 .footer-top p {
     font-size: 11px;
@@ -214,6 +216,39 @@ body {
 .footer-down p {
     font-size: 14px;
     color: #857f78;
+}
+.overlay {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.6);
+    opacity: 1;
+    display: none;
+    transition: 0.3s;
+    position: fixed;
+}
+.slider-menu {
+    padding: 20px;
+    background-color: rgb(228, 221, 221);
+    width: 50%;
+    height: 100vh;
+    position: fixed;
+    background-size: cover;
+    padding-top: 40px;
+    top: 0;
+    display: none;
+    left: 0;
+}
+.slide-menu {
+    margin: 10px 0 30px 0;
+}
+.slide-menu a {
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 700;
+    color: black;
 }
 @media (max-width:768px) {
     .menu-section {
