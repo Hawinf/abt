@@ -195,7 +195,7 @@ body {
 }
 .footer-mid h1 {
     margin: 0;
-    color: #d2c6b7;
+    color: #4a4744;
 }
 .footer-social {
     margin-bottom: 6px;
@@ -204,18 +204,18 @@ body {
 .footer-social a {
     color: black;
     font-size: 14px;
-    color: #d2c6b7;
+    color: #4a4744;
 }
 .footer-down {
     width: 40%;
 }
 .footer-down h1 {
     margin: 0;
-    color: #d2c6b7;
+    color: #4a4744;
 }
 .footer-down p {
     font-size: 14px;
-    color: #857f78;
+    color: #4a4744;
 }
 .overlay {
     position: absolute;
