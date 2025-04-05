@@ -31,7 +31,7 @@
                 <a href="" class="reserve">RESERVE</a>
             </div>
         </div>
-        <div class="about-section">
+        <div class="about-section" id="about">
             <div class="about-left">
                 <h2>&mdash; Explore</h2>
                 <h1>ASIAN STREET BY THAI</h1>
@@ -49,7 +49,7 @@
                 <a href="https://www.flipsnack.com/B9FEC7EEFB5/asian-by-thai-menu-sample/full-view.html" target="_blank" class="reserve">MENU</a>
             </div>
         </div>
-        <div class="gallery-wrapper">
+        <div class="gallery-wrapper" id="gallery">
             <h1 class="gallery-tittle">DISCOVER</h1>
             <h1>&mdash;DISCOVER&mdash;</h1>
             <div class="gallery js-flickity"
@@ -61,7 +61,7 @@
                 <div class="gallery-cell"></div>
             </div>
         </div>
-        <div class="main-wrapper">
+        <div class="main-wrapper" id="reserve">
             <div class="main-content">
                 <img src="./assets/images/2.jpg" alt="">
             </div>
@@ -110,15 +110,19 @@
     <div class="slider-menu" id="menu">
         <div class="slide-tittle">
             <h1>ASIAN STREET BY THAI</h1>
+            <h1 id="closemenu">X</h1>
         </div>
         <div class="slide-menu">
-            <a href="">ABOUT</a>
+            <a href="#about">ABOUT</a>
         </div>
         <div class="slide-menu">
-            <a href="">GALLERY</a>
+            <a href="#gallery">GALLERY</a>
         </div>
         <div class="slide-menu">
-            <a href="">RESERVE</a>
+            <a href="#reserve">RESERVE</a>
+        </div>
+        <div class="slide-menu">
+            <a href="">HOME</a>
         </div>
     </div>
 </body>
@@ -129,6 +133,7 @@
         const toggleButton = document.getElementById('toggleButton');
         const menu = document.getElementById('menu');
         const overlay = document.getElementById('overlay');
+        const closeButton=document.getElementById('closemenu');
 
         // Add event listener to the toggle button to show the menu
         toggleButton.addEventListener('click', function() {
@@ -140,7 +145,7 @@
         // Add event listener to the close button to hide the menu
         closeButton.addEventListener('click', function() {
             menu.style.display = 'none'; // Hide the menu
-            container.style.display = 'block';
+            // container.style.display = 'block';
             overlay.style.display = 'none';
         });
 </script>

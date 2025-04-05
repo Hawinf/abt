@@ -250,6 +250,10 @@ body {
     font-weight: 700;
     color: black;
 }
+.slide-tittle {
+    display: flex;
+    justify-content: space-between;
+}
 @media (max-width:768px) {
     .menu-section {
         margin-bottom: 0px;
